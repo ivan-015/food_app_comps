@@ -30,7 +30,7 @@ class Foodcard extends StatelessWidget {
           height: constraints.maxHeight * 1.000,
           decoration: BoxDecoration(
             color: Color(0xffede9e3),
-            borderRadius: BorderRadius.all(Radius.circular(20)),
+            borderRadius: BorderRadius.all(Radius.circular(20.0)),
           ),
         ),
       ),
@@ -41,6 +41,7 @@ class Foodcard extends StatelessWidget {
         height: constraints.maxHeight * 0.841,
         child: Image.asset(
           'assets/images/1_4.png',
+          package: 'food_app_comps',
           width: constraints.maxWidth * 0.218,
           height: constraints.maxHeight * 0.841,
           fit: BoxFit.fill,
@@ -59,10 +60,10 @@ class Foodcard extends StatelessWidget {
                   ovrRestaurantname ?? 'Restaurant name',
                   style: TextStyle(
                     fontFamily: 'Sanchez',
-                    fontSize: 14,
+                    fontSize: 14.0,
                     fontWeight: FontWeight.w400,
                     fontStyle: FontStyle.normal,
-                    letterSpacing: 0,
+                    letterSpacing: 0.0,
                     color: Colors.black,
                   ),
                   textAlign: TextAlign.left,
@@ -100,10 +101,10 @@ class Foodcard extends StatelessWidget {
                       '1',
                       style: TextStyle(
                         fontFamily: 'Sanchez',
-                        fontSize: 14,
+                        fontSize: 14.0,
                         fontWeight: FontWeight.w400,
                         fontStyle: FontStyle.normal,
-                        letterSpacing: 0,
+                        letterSpacing: 0.0,
                         color: Colors.black,
                       ),
                       textAlign: TextAlign.center,
@@ -120,6 +121,7 @@ class Foodcard extends StatelessWidget {
                     child: MinusButtonCustom(
                         child: Image.asset(
                       'assets/images/1_13.png',
+                      package: 'food_app_comps',
                       width: constraints.maxWidth * 0.059,
                       height: constraints.maxHeight * 0.227,
                       fit: BoxFit.none,
@@ -136,6 +138,7 @@ class Foodcard extends StatelessWidget {
                     child: PlusButtonCustom(
                         child: Image.asset(
                       'assets/images/1_16.png',
+                      package: 'food_app_comps',
                       width: constraints.maxWidth * 0.059,
                       height: constraints.maxHeight * 0.227,
                       fit: BoxFit.none,
@@ -156,10 +159,10 @@ class Foodcard extends StatelessWidget {
                   ovrFoodname ?? 'Food name',
                   style: TextStyle(
                     fontFamily: 'Sanchez',
-                    fontSize: 14,
+                    fontSize: 14.0,
                     fontWeight: FontWeight.w400,
                     fontStyle: FontStyle.normal,
-                    letterSpacing: 0,
+                    letterSpacing: 0.0,
                     color: Color(0xff6b6b6b),
                   ),
                   textAlign: TextAlign.left,
@@ -178,10 +181,10 @@ class Foodcard extends StatelessWidget {
                   ovr999 ?? '\$9.99',
                   style: TextStyle(
                     fontFamily: 'Sanchez',
-                    fontSize: 14,
+                    fontSize: 14.0,
                     fontWeight: FontWeight.w400,
                     fontStyle: FontStyle.normal,
-                    letterSpacing: 0,
+                    letterSpacing: 0.0,
                     color: Colors.black,
                   ),
                   textAlign: TextAlign.left,
