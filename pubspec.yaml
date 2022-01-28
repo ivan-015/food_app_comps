@@ -9,13 +9,13 @@ dependencies:
   flutter: 
     sdk: flutter
   cupertino_icons: ^1.0.2
+  flutter_bloc: ^8.0.1
 dev_dependencies: 
   flutter_test: 
     sdk: flutter
   flutter_lints: ^1.0.0
 flutter: 
   assets: 
-    - assets/images/
     - packages/food_app_comps/assets/images/1_13.png
     - packages/food_app_comps/assets/images/1_15.png
     - packages/food_app_comps/assets/images/1_14.png

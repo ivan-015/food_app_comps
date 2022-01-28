@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:food_app_comps/bloc/base_food_item_bloc.dart';
 
 class PlusButtonCustom extends StatefulWidget {
   final Widget? child;
@@ -15,6 +17,11 @@ class PlusButtonCustom extends StatefulWidget {
 class _PlusButtonCustomState extends State<PlusButtonCustom> {
   @override
   Widget build(BuildContext context) {
-    return widget.child!;
+    return GestureDetector(
+      child: widget.child!,
+      onTap: () => context.read<BaseFoodItemBloc>().add(
+            AddFoodItem(),
+          ),
+    );
   }
 }

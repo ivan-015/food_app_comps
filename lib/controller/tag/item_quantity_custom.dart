@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:food_app_comps/bloc/base_food_item_bloc.dart';
 
 class ItemQuantityCustom extends StatefulWidget {
   final Widget? child;
@@ -15,6 +17,8 @@ class ItemQuantityCustom extends StatefulWidget {
 class _ItemQuantityCustomState extends State<ItemQuantityCustom> {
   @override
   Widget build(BuildContext context) {
-    return widget.child!;
+    return Text(
+      context.watch<BaseFoodItemBloc>().state.numberOfItems.toString(),
+    );
   }
 }
